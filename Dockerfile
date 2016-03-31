@@ -28,7 +28,8 @@ RUN apt-get update && \
                        npm \
                        nginx \
                        supervisor \
-                       wget
+                       wget \
+                       mysql-client-5.5
 RUN apt-get install -y python-virtualenv \
     && apt-get clean \
     && apt-get autoclean \
