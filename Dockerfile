@@ -41,3 +41,6 @@ RUN wget -N http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.g
 RUN gunzip GeoLiteCity.dat.gz
 RUN mkdir /usr/local/share/GeoIP
 RUN mv GeoLiteCity.dat /usr/local/share/GeoIP/
+
+ADD requirements.txt requirements.txt
+RUN pip install -r requirements.txt
