@@ -45,3 +45,4 @@ RUN mv GeoLiteCity.dat /usr/local/share/GeoIP/
 ADD requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 RUN pip install coverage==4.0.3
+RUN pip install -U pip
